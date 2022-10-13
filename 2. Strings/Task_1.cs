@@ -37,7 +37,7 @@ switch (Console.ReadKey().KeyChar)
 Console.WriteLine("\nВведите вторую фамилию");
 string? sname_2 = Console.ReadLine();
 
-if (sname.CompareTo(sname_2) == 0)
+if (sname.Length()==sname_2.Length())
 {
     Console.WriteLine($"Строки равны. Длина фамилии {sname.Length}");
 }
