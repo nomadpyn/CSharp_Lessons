@@ -1,0 +1,11 @@
+
+*.v2
+5. Inheritance & Polymorphism/Task_1/.vs/Task_1/v17/.suo
+*.json
+*.dll
+*.exe
+*.pdb
+5. Inheritance & Polymorphism/Task_1/Task_1/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+5. Inheritance & Polymorphism/Task_1/Task_1/obj/Debug/net6.0/Task_1.AssemblyInfo.cs
+*.cache
+*.BuildWithSkipAnalyzers
