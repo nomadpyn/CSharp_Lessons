@@ -9,6 +9,6 @@
     public virtual new void Print()
     {
         base.Print();
-        Console.WriteLine($"Место доставки: {this.company}");
+        Console.WriteLine($"Организация: {this.company}");
     }
 }

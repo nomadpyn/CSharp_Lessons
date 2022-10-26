@@ -2,8 +2,8 @@
 {
     protected string? work_location;
     protected int pay;
-    public Employer(string nameP, string fnameP, int age, string work_locationP, int payP)
-    : base(nameP, fnameP, age)
+    public Employer(string nameP, string fnameP, int ageP, string work_locationP, int payP)
+    : base(nameP, fnameP, ageP)
     {
         this.work_location = work_locationP;
         this.pay = payP;
