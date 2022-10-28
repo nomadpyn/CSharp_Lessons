@@ -1,4 +1,4 @@
-[Task_1](https://github.com/nomadpyn/CSharp_Lessons/tree/master/6.%20Operator_Overloading/Task_1.cs)
+[Task_1](https://github.com/nomadpyn/CSharp_Lessons/tree/master/6.%20Operator_Overloading/Task_1)
  
  Разработать "Магазин" с конструктором и полями:
  * название;
@@ -11,7 +11,7 @@
  * "<" и ">" проверка на меньше или больше площади магазина;
  * "!=" и Equals
 
- [Task_2](https://github.com/nomadpyn/CSharp_Lessons/tree/master/6.%20Operator_Overloading/Task_2.cs)
- 
+ [Task_2](https://github.com/nomadpyn/CSharp_Lessons/tree/master/6.%20Operator_Overloading/Task_2)
+
  Разработать собственный класс для хранения целочисленных коэффициентов A и B линейного уравнения A×X + B = 0 . 
  В классе реализовать статический метод Parse(), которые принимает строку, которая имеет вид уравнения типа A×X + B = 0 и сам распределяет значения переменных по полям. Также сделать метод, который возвращает значение X.
