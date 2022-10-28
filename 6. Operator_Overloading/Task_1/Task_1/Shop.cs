@@ -1,4 +1,6 @@
-﻿ internal class Shop
+﻿using System.Runtime.CompilerServices;
+
+internal class Shop
     {
     private string? name;
     private string? adress;
@@ -28,6 +30,20 @@
     {
         get { return this.square; }
         set { this.square = value == 0 ? 1 : value; }
+    }
+    public static Shop operator + (Shop obj, double sq)
+    {
+        obj.square += sq;
+        return obj;
+    }
+    public static Shop operator -(Shop obj, double sq)
+    {
+        if (obj.square > sq+1)
+        {
+            obj.square -= sq;
+        }
+        
+        return obj;
     }
 
 }
