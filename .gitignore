@@ -25,3 +25,4 @@
 6. Operator_Overloading/Task_1/Task_1/obj/Debug/net6.0/Task_1.AssemblyInfo.cs
 *.editorconfig
 6. Operator_Overloading/Task_1/Task_1/obj/Debug/net6.0/Task_1.GlobalUsings.g.cs
+*.lock

@@ -1,8 +1,8 @@
 ﻿ internal class Shop
     {
-    string? name;
-    string? adress;
-    double square;
+    private string? name;
+    private string? adress;
+    private double square;
 
     public Shop(string nameP,string adressP, double squareP)
     {
@@ -14,4 +14,20 @@
     {
         return $"Магазин \"{this.name}\" по адресу {this.adress}, площадью {this.square} кв.м.";
     }
+    public string? Name
+    {
+        get { return this.name; }
+        set { this.name = value; }
+    }
+    public string? Adress
+    {
+        get { return this.adress; }
+        set { this.adress = value; }
+    }
+    public double Square
+    {
+        get { return this.square; }
+        set { this.square = value == 0 ? 1 : value; }
+    }
+
 }
