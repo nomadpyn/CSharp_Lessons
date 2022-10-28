@@ -1,4 +1,7 @@
-﻿using System.Runtime.CompilerServices;
+﻿using Microsoft.VisualBasic;
+using System.ComponentModel;
+using System.Reflection.Metadata;
+using System.Runtime.CompilerServices;
 
 internal class Shop
     {
@@ -45,5 +48,31 @@ internal class Shop
         
         return obj;
     }
-
+    public static bool operator == (Shop obj1, Shop obj2)
+    {
+        if (obj1.square == obj2.square)
+            return true;
+        else
+            return false;
+    }
+    public static bool operator !=(Shop obj1, Shop obj2)
+    {
+        if (obj1.square != obj2.square)
+            return true;
+        else
+            return false;
+    }
+    public static bool operator <(Shop obj1, Shop obj2) {
+        if (obj1.square < obj2.square)
+            return true;
+        else
+            return false;
+    }
+    public static bool operator >(Shop obj1, Shop obj2)
+    {
+        if (obj1.square > obj2.square)
+            return true;
+        else
+            return false;
+    }
 }
