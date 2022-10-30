@@ -25,6 +25,10 @@
             equ.B = Convert.ToInt32(arr[2]);
 
         return equ;
-    } 
     }
+    public override string ToString()
+    {
+        return $"Линейное уравнение: {this.a} x + {this.b} = 0";
+    }
+}
 
