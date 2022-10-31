@@ -1,4 +1,6 @@
-﻿internal class Quadratic_Equation
+﻿using System.Transactions;
+
+internal class Quadratic_Equation
     {
     protected int a=0;
     protected int b=0;
@@ -26,9 +28,23 @@
 
         return equ;
     }
+    public double getX()
+    {
+        if (this.a == 0)
+            return 0;
+        else
+        {
+            
+            double x = (double)(this.b*-1)/(double)this.a;
+            
+            return x;
+        }
+    }
     public override string ToString()
     {
-        return $"Линейное уравнение: {this.a} x + {this.b} = 0";
+        if (this.b > 0)
+            return $"Линейное уравнение: {this.a} x + {this.b} = 0";
+        else
+            return $"Линейное уравнение: {this.a} x - {this.b*-1} = 0";
     }
 }
-
