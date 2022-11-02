@@ -1,6 +1,6 @@
 ﻿internal interface ICompPet
 {
-    bool IsCompanion { get; }
+    bool isCompanion { get; }
     string TypeName();
     string Voice();
 }
