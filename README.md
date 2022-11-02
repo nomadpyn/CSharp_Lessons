@@ -12,3 +12,5 @@
  ## [Наследование_и_Полиморфизм](https://github.com/nomadpyn/CSharp_Lessons/tree/master/5.%20Inheritance%20%26%20Polymorphism)
 
  ## [Перегрузка_операторов](https://github.com/nomadpyn/CSharp_Lessons/tree/master/6.%20Operator_Overloading)
+
+ ## [Интерфейсы](https://github.com/nomadpyn/CSharp_Lessons/tree/master/7.%20Interfaces)
