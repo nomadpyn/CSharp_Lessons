@@ -1,5 +1,5 @@
 ﻿internal interface IWorker
 {
-    string location { get; set; }
-    string result { get; set; }
+    string Location { get; set; }
+    string Result { get; }
 }
