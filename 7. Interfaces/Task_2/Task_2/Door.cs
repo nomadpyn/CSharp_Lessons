@@ -8,6 +8,6 @@
     }
     public override string ToString()
     {
-        return $"Двери " + (isReady == false ? "Не построено" : "Построено");
+        return $"Дверь " + (isReady == false ? "Не построено" : "Построено");
     }
 }

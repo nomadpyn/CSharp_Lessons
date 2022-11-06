@@ -13,6 +13,7 @@
             if (Obj.HS[i].IsReady == false)
             {
                 Obj.HS[i].IsReady = true;
+                Console.WriteLine($"{Obj.HS[i].ToString()} работником {this.id}");
                 break;
             }
         }
