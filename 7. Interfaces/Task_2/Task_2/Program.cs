@@ -6,11 +6,11 @@ int choise;
 
 while (Dom.isHouseReady()!=true)
 {
-    Console.WriteLine($"День {Day++}");
+    Console.WriteLine($"\n---------------\nДень {Day++}");
     Console.WriteLine("Что делаем?");
-    Console.WriteLine("1 - Работаем, 2 - Отчет");
+    Console.Write("1 - Работаем, 2 - Отчет : ");
     choise = Int32.Parse(Console.ReadLine());
-    Console.Clear();
+    Console.WriteLine();
     switch (choise)
     {
         case 1:
@@ -30,5 +30,8 @@ while (Dom.isHouseReady()!=true)
             }
 
     }
-    Console.WriteLine(Dom.isHouseReady() ? "Дом построен" : "Дом еще не построен");
+    if (Dom.isHouseReady())
+    {
+        Console.WriteLine("\n***Поздравляем! Дом построен***\n");
+    }
 }
