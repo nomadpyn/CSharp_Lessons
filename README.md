@@ -14,3 +14,5 @@
  ## [Перегрузка_операторов](https://github.com/nomadpyn/CSharp_Lessons/tree/master/6.%20Operator_Overloading)
 
  ## [Интерфейсы](https://github.com/nomadpyn/CSharp_Lessons/tree/master/7.%20Interfaces)
+ 
+ ## [Исключения](https://github.com/nomadpyn/CSharp_Lessons/tree/master/8%20Exceptions)
