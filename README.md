@@ -15,4 +15,6 @@
 
  ## [Интерфейсы](https://github.com/nomadpyn/CSharp_Lessons/tree/master/7.%20Interfaces)
  
- ## [Исключения](https://github.com/nomadpyn/CSharp_Lessons/tree/master/8%20Exceptions)
+ ## [Исключения](https://github.com/nomadpyn/CSharp_Lessons/tree/master/8.%20Exceptions)
+
+ ## [Делегаты](https://github.com/nomadpyn/CSharp_Lessons/tree/master/8.%20Delegate)
