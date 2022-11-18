@@ -18,3 +18,5 @@
  ## [Исключения](https://github.com/nomadpyn/CSharp_Lessons/tree/master/8.%20Exceptions)
 
  ## [Делегаты](https://github.com/nomadpyn/CSharp_Lessons/tree/master/9.%20Delegate)
+
+ ## [События](https://github.com/nomadpyn/CSharp_Lessons/tree/master/10.%20Events)
