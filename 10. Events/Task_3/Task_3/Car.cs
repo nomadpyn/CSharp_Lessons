@@ -2,10 +2,11 @@
     {
     public delegate void carDel(uint speed);
     public event carDel? ItMaxSpeed;
-    public string Name { get; set; }
+    public string Name { get; set;}
     public uint MaxSpeed { get; set; }
     public uint CurrSpeed { get; set; }
     public uint Racing { get; set; }
+    public int distToGo { get; set; }
     public Car(string name, uint maxSpeed, uint racing)
     {
         this.Name = name;
@@ -31,6 +32,7 @@
     {
         Console.WriteLine($"{this.Name} достиг скорости в {speed}");
     }
+    
 
     public override string ToString()
     {
