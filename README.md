@@ -20,3 +20,5 @@
  ## [Делегаты](https://github.com/nomadpyn/CSharp_Lessons/tree/master/9.%20Delegate)
 
  ## [События](https://github.com/nomadpyn/CSharp_Lessons/tree/master/10.%20Events)
+
+ ## [Лямбда_и_LINQ](https://github.com/nomadpyn/CSharp_Lessons/tree/master/11.%20Lambda%20%26%20LINQ)
