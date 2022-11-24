@@ -22,3 +22,5 @@
  ## [События](https://github.com/nomadpyn/CSharp_Lessons/tree/master/10.%20Events)
 
  ## [Лямбда_и_LINQ](https://github.com/nomadpyn/CSharp_Lessons/tree/master/11.%20Lambda%20%26%20LINQ)
+
+ ## [Взаимодействие_с_Файловой_Системой](https://github.com/nomadpyn/CSharp_Lessons/tree/master/12.%2Interaction_with_FileSystem)
