@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Text;
 using static System.Net.Mime.MediaTypeNames;
 
-string path = "C:\\Users\\Cab\\source\\repos\\Test_3\\Test_3\\bin\\Debug\\net6.0";
+string path = ".";
 
 getFilesInfo(path);
 
@@ -63,7 +63,7 @@ void readFile(string path, string file)
             byte[] read = new byte[(int)fs.Length];
             fs.Read(read, 0, read.Length);
             string data = Encoding.Default.GetString(read);
-            Console.WriteLine("Данные из файла:\n" + data+ "\n");
+            Console.WriteLine("Данные из файла:\n" + data + "\n");
         }
     }
     else
