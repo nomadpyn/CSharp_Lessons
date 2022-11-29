@@ -24,3 +24,5 @@
  ## [Лямбда_и_LINQ](https://github.com/nomadpyn/CSharp_Lessons/tree/master/11.%20Lambda%20%26%20LINQ)
 
  ## [Взаимодействие_с_Файловой_Системой](https://github.com/nomadpyn/CSharp_Lessons/tree/master/12.%20Interaction_with_FileSystem)
+
+ ## [Сериализация_и_XML](https://github.com/nomadpyn/CSharp_Lessons/tree/master/13.%20Serializable%20%26%20XML)
