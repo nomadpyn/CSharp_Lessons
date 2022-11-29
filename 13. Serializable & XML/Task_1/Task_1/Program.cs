@@ -4,7 +4,8 @@ using System;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization.Formatters.Binary;
 
-PayBill A = new PayBill(14.2, 7, 5.6, 4);
+// создаем объект с конструктором с параметрами
+PayBill A = new PayBill(14.2, 7, 5.6,4);
 A.MakeBill();
 
 writeFile(A);
@@ -17,6 +18,7 @@ writeFile(A);
 
 Console.WriteLine(readFile());
 
+// метод записи объекта в файл
 static void writeFile(PayBill obj)
 {
     BinaryFormatter binFormat = new BinaryFormatter();
@@ -27,6 +29,7 @@ static void writeFile(PayBill obj)
     }
 }
 
+// метод чтения объекта из файла
 static PayBill readFile()
 {
     PayBill obj = null;
