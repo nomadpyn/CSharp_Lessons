@@ -49,9 +49,10 @@ public class PayBill: ISerializable
     public override string ToString()
     {
         if (this.BillToPay != 0)
-            return $"Сумма за услуги {this.Sum:F} руб\nШтраф {this.Fine:F} руб\nСумма к оплате {this.BillToPay:F} руб";
+            return $"Сумма за услуги {this.Sum:F} руб\nШтраф {this.Fine:F} руб\nСумма к оплате {this.BillToPay:F} руб\n";
         else
-            return "Счет на оплату не сформирован.";
+            return "Счет на оплату не сформирован.\n";
+
     }
     void ISerializable.GetObjectData(SerializationInfo info, StreamingContext context)
     {
