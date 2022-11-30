@@ -1,2 +1,4 @@
 ﻿
+XmlWorker.createXml();
+
 XmlWorker.readXml();

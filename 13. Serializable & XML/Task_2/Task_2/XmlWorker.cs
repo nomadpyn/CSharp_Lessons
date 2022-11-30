@@ -12,21 +12,24 @@ public static void createXml()
             writer.Formatting = Formatting.Indented;
             writer.WriteStartDocument();
             writer.WriteStartElement("Order");
-            writer.WriteStartElement("Order_Element");
-            writer.WriteElementString("Name", "Молоко");
-            writer.WriteElementString("Price", "65.4");
-            writer.WriteElementString("Amount", "3");
-            writer.WriteEndElement();
-            writer.WriteStartElement("Order_Element");
-            writer.WriteElementString("Name", "Хлеб");
-            writer.WriteElementString("Price", "21.3");
-            writer.WriteElementString("Amount", "1");
-            writer.WriteEndElement();
-            writer.WriteStartElement("Order_Element");
-            writer.WriteElementString("Name", "Мясо");
-            writer.WriteElementString("Price", "357.12");
-            writer.WriteElementString("Amount", "3");
-            writer.WriteEndElement();
+            ConsoleKey choise = ConsoleKey.Enter;
+            do
+            {
+                Console.WriteLine("\nEnter - добавить элемент в заказ, End - закончить формирование заказа");
+                choise = Console.ReadKey().Key;
+                if (choise== ConsoleKey.Enter)
+                {
+                    writer.WriteStartElement("Order_Element");
+                    Console.WriteLine("Введите наименование товара");
+                    writer.WriteElementString("Name", Console.ReadLine());
+                    Console.WriteLine("Введите цену товара");
+                    writer.WriteElementString("Price", Console.ReadLine());
+                    Console.WriteLine("Введите количество товара");
+                    writer.WriteElementString("Amount", Console.ReadLine());
+                    writer.WriteEndElement();
+                }
+            } while (choise != ConsoleKey.End);
+           
             writer.WriteEndElement();
         }
         catch (Exception ex)
@@ -47,23 +50,25 @@ public static void readXml()
         {
             reader = new XmlTextReader("Order.xml");
             reader.WhitespaceHandling = WhitespaceHandling.None;
+            Console.WriteLine("\nСостав заказа:\n");
             while (reader.Read())
             {
                 if (reader.NodeType ==XmlNodeType.Element && reader.Name =="Name" )
                 {
                    
-                    Console.WriteLine("Наименование " + reader.ReadElementContentAsString());
+                    Console.WriteLine("Наименование: " + reader.ReadElementContentAsString());
                 }
                 if (reader.NodeType == XmlNodeType.Element && reader.Name == "Price")
                 {
 
-                    Console.WriteLine("Цена " + reader.ReadElementContentAsDouble() + " руб");
+                    Console.Write("Цена: " + reader.ReadElementContentAsDouble() + " руб");
                 }
                 if (reader.NodeType == XmlNodeType.Element && reader.Name == "Amount")
                 {
 
-                    Console.WriteLine("Количество " + reader.ReadElementContentAsInt());
+                    Console.Write(" Количество: " + reader.ReadElementContentAsInt()+"\n");
                 }
+               
             }
 
         }
