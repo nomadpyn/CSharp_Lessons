@@ -39,4 +39,43 @@ public static void createXml()
                 writer.Close();
         }
     }
+
+public static void readXml()
+    {
+        XmlTextReader reader = null;
+        try
+        {
+            reader = new XmlTextReader("Order.xml");
+            reader.WhitespaceHandling = WhitespaceHandling.None;
+            while (reader.Read())
+            {
+                if (reader.NodeType ==XmlNodeType.Element && reader.Name =="Name" )
+                {
+                   
+                    Console.WriteLine("Наименование " + reader.ReadElementContentAsString());
+                }
+                if (reader.NodeType == XmlNodeType.Element && reader.Name == "Price")
+                {
+
+                    Console.WriteLine("Цена " + reader.ReadElementContentAsDouble() + " руб");
+                }
+                if (reader.NodeType == XmlNodeType.Element && reader.Name == "Amount")
+                {
+
+                    Console.WriteLine("Количество " + reader.ReadElementContentAsInt());
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            if (reader != null)
+                reader.Close();
+        }
+
+    }
 }  
